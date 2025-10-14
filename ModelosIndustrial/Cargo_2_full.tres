@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cc3m7lscwvwrm"]
+
+[ext_resource type="Texture2D" uid="uid://bgh162ymxpoe8" path="res://ModelosIndustrial/Industrial_exterior_v2_Cargo_4.png" id="1_vrxbs"]
+
+[resource]
+resource_name = "Cargo_2_full"
+cull_mode = 2
+albedo_texture = ExtResource("1_vrxbs")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

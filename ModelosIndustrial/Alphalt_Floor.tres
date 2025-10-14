@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://vyvb1od6pgyy"]
+
+[ext_resource type="Texture2D" uid="uid://bicr2hwnj13t4" path="res://ModelosIndustrial/Industrial_exterior_v2_Asphalt_1-4.png" id="1_xgvor"]
+
+[resource]
+resource_name = "Alphalt_Floor"
+cull_mode = 2
+albedo_texture = ExtResource("1_xgvor")
+texture_filter = 2

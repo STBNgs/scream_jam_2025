@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://clad8u6vdaf0w"]
+
+[ext_resource type="Texture2D" uid="uid://lek732oyptsw" path="res://ModelosIndustrial/Industrial_exterior_v2_Bridges.png" id="1_q6hrw"]
+
+[resource]
+resource_name = "Bridges_support_3"
+cull_mode = 2
+albedo_texture = ExtResource("1_q6hrw")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c2porum8w82st"]
+
+[ext_resource type="Texture2D" uid="uid://cxaftsss2cb4d" path="res://ModelosIndustrial/Industrial_exterior_v2_Building_6.png" id="1_nui5f"]
+
+[resource]
+resource_name = "Building_10"
+cull_mode = 2
+albedo_texture = ExtResource("1_nui5f")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

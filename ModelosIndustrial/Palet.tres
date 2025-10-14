@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://igy1l1qsu26v"]
+
+[ext_resource type="Texture2D" uid="uid://cwfeknfoxqdmk" path="res://ModelosIndustrial/Industrial_exterior_v2_Palet.png" id="1_7kbsy"]
+
+[resource]
+resource_name = "Palet"
+cull_mode = 2
+albedo_texture = ExtResource("1_7kbsy")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

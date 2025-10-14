@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://07ctheqrs5ol"]
+
+[ext_resource type="Texture2D" uid="uid://owvsjy8lw4d7" path="res://ModelosIndustrial/Industrial_exterior_v2_Wall.png" id="1_washn"]
+
+[resource]
+resource_name = "Wall"
+cull_mode = 2
+albedo_texture = ExtResource("1_washn")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

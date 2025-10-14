@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dnl44d0ts1twk"]
+
+[ext_resource type="Texture2D" uid="uid://dijud3apf54uy" path="res://ModelosIndustrial/Industrial_exterior_v2_Generator.png" id="1_w58lx"]
+
+[resource]
+resource_name = "Generator"
+cull_mode = 2
+albedo_texture = ExtResource("1_w58lx")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

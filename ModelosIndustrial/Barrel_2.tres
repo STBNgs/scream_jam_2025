@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cnxplai3ic51n"]
+
+[ext_resource type="Texture2D" uid="uid://8gilrbiil8ka" path="res://ModelosIndustrial/Industrial_exterior_v2_Barrel_2.png" id="1_oxo1o"]
+
+[resource]
+resource_name = "Barrel_2"
+cull_mode = 2
+albedo_texture = ExtResource("1_oxo1o")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b00jqwuhorwyb"]
+
+[ext_resource type="Texture2D" uid="uid://dp2b7kp7omdbh" path="res://ModelosIndustrial/Industrial_exterior_v2_Ventilation_2.png" id="1_6bg5m"]
+
+[resource]
+resource_name = "Ventilation_2"
+cull_mode = 2
+albedo_texture = ExtResource("1_6bg5m")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

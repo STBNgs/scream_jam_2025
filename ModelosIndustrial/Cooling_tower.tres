@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bvehor3nataud"]
+
+[ext_resource type="Texture2D" uid="uid://dlox425egjqdg" path="res://ModelosIndustrial/Industrial_exterior_v2_Cooling_tower.png" id="1_xyqsa"]
+
+[resource]
+resource_name = "Cooling_tower"
+cull_mode = 2
+albedo_texture = ExtResource("1_xyqsa")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

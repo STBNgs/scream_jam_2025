@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://djselai31164o"]
+
+[ext_resource type="Texture2D" uid="uid://b47uaexqus4ln" path="res://ModelosIndustrial/Industrial_exterior_v2_Metal_cabinet_1.png" id="1_uogs0"]
+
+[resource]
+resource_name = "Metal_cabinet_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_uogs0")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

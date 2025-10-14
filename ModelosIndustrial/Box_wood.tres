@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://w5tv54kfpm1c"]
+
+[ext_resource type="Texture2D" uid="uid://bk8mn0dy61vbm" path="res://ModelosIndustrial/Industrial_exterior_v2_Box_wood.png" id="1_osgas"]
+
+[resource]
+resource_name = "Box_wood"
+cull_mode = 2
+albedo_texture = ExtResource("1_osgas")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

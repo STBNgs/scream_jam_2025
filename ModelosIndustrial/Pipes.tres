@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://d1pvlbh3fi2xd"]
+
+[ext_resource type="Texture2D" uid="uid://b18tpj2pkwmcv" path="res://ModelosIndustrial/Industrial_exterior_v2_Pipes.png" id="1_jx5ok"]
+
+[resource]
+resource_name = "Pipes"
+cull_mode = 2
+albedo_texture = ExtResource("1_jx5ok")
+metallic = 1.0
+roughness = 0.858579

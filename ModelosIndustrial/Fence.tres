@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cdoligshkmmad"]
+
+[ext_resource type="Texture2D" uid="uid://ct1d1kvvaqi6i" path="res://ModelosIndustrial/Industrial_exterior_v2_Fence.png" id="1_os6ay"]
+
+[resource]
+resource_name = "Fence"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_os6ay")
+metallic = 1.0
+roughness = 0.858579
+texture_filter = 2

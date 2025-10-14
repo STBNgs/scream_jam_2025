@@ -1,0 +1,249 @@
+[gd_scene load_steps=16 format=3 uid="uid://blkr4clxs8gpa"]
+
+[ext_resource type="ArrayMesh" uid="uid://p2d0prym7166" path="res://ModelosIndustrial/Industrial_exterior_v2_Road_long.res" id="1_n15es"]
+[ext_resource type="ArrayMesh" uid="uid://c30ln5l4ivop3" path="res://ModelosIndustrial/Industrial_exterior_v2_Road_short.res" id="2_b5sfw"]
+[ext_resource type="ArrayMesh" uid="uid://daemjlwianefy" path="res://ModelosIndustrial/Industrial_exterior_v2_Road_turn_1.res" id="3_2bkhb"]
+[ext_resource type="ArrayMesh" uid="uid://1atomhatasjn" path="res://ModelosIndustrial/Industrial_exterior_v2_Road_turn_3.res" id="4_a5obf"]
+[ext_resource type="Script" path="res://Scenes/perro.gd" id="4_c4n38"]
+[ext_resource type="ArrayMesh" uid="uid://bqyccevks32em" path="res://ModelosIndustrial/Industrial_exterior_v2_Alphalt_Floor.res" id="5_n6ve7"]
+[ext_resource type="ArrayMesh" uid="uid://cossqg61tjih7" path="res://ModelosIndustrial/Industrial_exterior_v2_Box_wood.res" id="6_nk37w"]
+[ext_resource type="ArrayMesh" uid="uid://dnkwxpm1x7a0k" path="res://ModelosIndustrial/Industrial_exterior_v2_Building_2.res" id="7_4w8qm"]
+[ext_resource type="PackedScene" uid="uid://b61j038w5osqn" path="res://enemies/low res scary dog.fbx" id="8_bny88"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="10_3yg3n"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_76bdv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fmw67"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8l3sk"]
+size = Vector3(0.918091, 1, 1)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_8uyst"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8fcvt"]
+
+[node name="Exterior1" type="Node3D"]
+
+[node name="calles" type="Node" parent="."]
+
+[node name="IndustrialExteriorV2AlphaltFloor4" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3667, -1.90735e-06, 12.0138)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor3" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.63744, 0, 11.9446)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor2" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8182, -0.206238, -11.9096)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95541, -0.261307, -11.9574)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor6" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.5467, 0, -11.7691)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor7" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(0.862637, 0, 0.505823, 0, 1, 0, -0.505823, 0, 0.862637, 41.2725, 0.065464, -7.62139)
+mesh = ExtResource("5_n6ve7")
+
+[node name="IndustrialExteriorV2AlphaltFloor8" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.4431, 0, 5.20906)
+mesh = ExtResource("5_n6ve7")
+
+[node name="IndustrialExteriorV2AlphaltFloor9" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.2681, 0, -11.8465)
+mesh = ExtResource("5_n6ve7")
+
+[node name="IndustrialExteriorV2AlphaltFloor10" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2325, 0, -9.26947)
+mesh = ExtResource("5_n6ve7")
+
+[node name="IndustrialExteriorV2AlphaltFloor11" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.4097, 0, 19.2191)
+mesh = ExtResource("5_n6ve7")
+
+[node name="IndustrialExteriorV2AlphaltFloor12" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.9787, 0, 27.7599)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor13" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.19605, 46.6673, 0, 35.4037)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor14" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(0.928667, 0, 0.370914, 0, 1, 0, -0.370914, 0, 0.928667, 25.0878, 0, 52.6634)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor15" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.1257, 0, 61.2321)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor16" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4189, 0, 43.0107)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor17" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.5849, 0, 61.2908)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor18" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.0718, 0, 61.8153)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor19" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.2963, 0, 37.4075)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor20" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.9583, 0, 37.6062)
+mesh = ExtResource("5_n6ve7")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2AlphaltFloor5" type="MeshInstance3D" parent="calles"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.3262, -3.8147e-06, 11.972)
+mesh = ExtResource("5_n6ve7")
+
+[node name="EdificioCajas" type="Node" parent="."]
+
+[node name="IndustrialExteriorV2BoxWood" type="MeshInstance3D" parent="EdificioCajas"]
+transform = Transform3D(5.84858, 0, 0, 0, 5.30156, 0, 0, 0, 5.30156, 61.8615, 0, 40.4641)
+mesh = ExtResource("6_nk37w")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2Building2" type="MeshInstance3D" parent="EdificioCajas"]
+transform = Transform3D(0.00656238, 0, 0.999978, 0, 1, 0, -0.999978, 0, 0.00656238, 74.3524, 0, 38.0392)
+mesh = ExtResource("7_4w8qm")
+skeleton = NodePath("../..")
+
+[node name="Enemigos" type="Node" parent="."]
+
+[node name="Perro" type="CharacterBody3D" parent="Enemigos"]
+script = ExtResource("4_c4n38")
+
+[node name="Modelo" parent="Enemigos/Perro" instance=ExtResource("8_bny88")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3388, 0.930032, -0.210743)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Enemigos/Perro"]
+
+[node name="Area3D" type="Area3D" parent="Enemigos/Perro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.4709, 0.930032, 49.1023)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enemigos/Perro/Area3D"]
+transform = Transform3D(1.60608, 0, 0, 0, 1.60608, 0, 0, 0, 1.60608, 0, 0, 0)
+shape = SubResource("SphereShape3D_76bdv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enemigos/Perro"]
+
+[node name="Timer" type="Timer" parent="Enemigos/Perro"]
+
+[node name="PatrolPoints" type="Node3D" parent="Enemigos/Perro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106391, 0.00761414, -0.0407982)
+
+[node name="P0" type="Marker3D" parent="Enemigos/Perro/PatrolPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.6996, 1.50526, 16.3697)
+
+[node name="P1" type="Marker3D" parent="Enemigos/Perro/PatrolPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.2509, 0, 0)
+
+[node name="P2" type="Marker3D" parent="Enemigos/Perro/PatrolPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.0971, 0, 40.83)
+
+[node name="P3" type="Marker3D" parent="Enemigos/Perro/PatrolPoints"]
+transform = Transform3D(8.61032, 0, 0, 0, 4.17066, 0, 0, 0, 5.65672, 27.1175, 2.13483, 49.774)
+
+[node name="Player" type="Node" parent="."]
+
+[node name="Player" type="CharacterBody3D" parent="Player"]
+script = ExtResource("10_3yg3n")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.733622, 0)
+shape = SubResource("BoxShape3D_fmw67")
+
+[node name="Camera3D" type="Camera3D" parent="Player/Player"]
+transform = Transform3D(0.00490433, 0, -0.999988, 0, 1, 0, 0.999988, 0, 0.00490433, 0, 0.733622, 0)
+current = true
+
+[node name="Pista" type="Node" parent="."]
+
+[node name="IndustrialExteriorV2RoadLong3" type="MeshInstance3D" parent="Pista"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.3363, 0, 24.8505)
+mesh = ExtResource("1_n15es")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2RoadShort" type="MeshInstance3D" parent="Pista"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.3513, -1.90735e-06, 9.82472)
+mesh = ExtResource("2_b5sfw")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2RoadLong2" type="MeshInstance3D" parent="Pista"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.8109, 0, 0)
+mesh = ExtResource("1_n15es")
+skeleton = NodePath("../StaticBody3D/IndustrialExteriorV2RoadLong")
+
+[node name="IndustrialExteriorV2RoadTurn1" type="MeshInstance3D" parent="Pista"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.4631, 0, -0.0218906)
+mesh = ExtResource("3_2bkhb")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2RoadTurn3" type="MeshInstance3D" parent="Pista"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 39.3285, 0, 44.5351)
+mesh = ExtResource("4_a5obf")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2RoadLong4" type="MeshInstance3D" parent="Pista"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 77.3975, 0, 49.4378)
+mesh = ExtResource("1_n15es")
+skeleton = NodePath("../..")
+
+[node name="IndustrialExteriorV2RoadLong5" type="MeshInstance3D" parent="Pista"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 58.8963, 0.0292883, 49.5576)
+mesh = ExtResource("1_n15es")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pista"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pista/StaticBody3D"]
+transform = Transform3D(19.1278, 0, 0, 0, -0.0740039, 0, 0, 0, 8.8172, -1.14084, -0.068609, 0)
+shape = SubResource("BoxShape3D_8l3sk")
+
+[node name="IndustrialExteriorV2RoadLong" type="MeshInstance3D" parent="Pista/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+mesh = ExtResource("1_n15es")
+skeleton = NodePath("../../..")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Pista/StaticBody3D/IndustrialExteriorV2RoadLong"]
+transform = Transform3D(3.5649, 0, -2.84217e-14, 0, 1, 0, -1.42109e-14, 0, 6.42327, 0, 0.15711, 0)
+navigation_mesh = SubResource("NavigationMesh_8uyst")
+
+[node name="MallaNavegacionPerro" type="Node" parent="."]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="MallaNavegacionPerro"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MallaNavegacionPerro/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.32082, 0.78563, 0)
+mesh = SubResource("PlaneMesh_8fcvt")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Node"]
+transform = Transform3D(-0.458991, 0.65216, -0.603336, -0.888441, -0.336922, 0.311698, 0, 0.679096, 0.73405, 0, 55.3332, 0.0319405)
+light_energy = 11.555
+sky_mode = 1
