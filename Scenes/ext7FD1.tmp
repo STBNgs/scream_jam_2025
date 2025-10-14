@@ -65,7 +65,7 @@ shape = SubResource("BoxShape3D_fmw67")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.763998, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Player/Head"]
-transform = Transform3D(-0.0430844, -0.000304893, -0.999071, 0.00286268, 0.999996, -0.000428639, 0.999067, -0.00287849, -0.0430834, 0, 0, 0)
+transform = Transform3D(0.00490433, 0, -0.999988, 0, 1, 0, 0.999988, 0, 0.00490433, 0, 0, 0)
 current = true
 
 [node name="Pista" type="Node" parent="."]
