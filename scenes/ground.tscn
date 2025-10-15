@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccuueup85vyut"]
+
+[ext_resource type="Texture2D" uid="uid://cmsjrcs10v463" path="res://graphics/grass.png" id="1_pybca"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mi8v4"]
+albedo_texture = ExtResource("1_pybca")
+uv1_scale = Vector3(0.395, 0.47, 0.62)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lmksl"]
+material = SubResource("StandardMaterial3D_mi8v4")
+
+[sub_resource type="HeightMapShape3D" id="HeightMapShape3D_pybca"]
+
+[node name="ground" type="StaticBody3D"]
+collision_mask = 0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(7.973106, 0, 0, 0, 5.4128594, 0, 0, 0, 7.9052157, 0, 0, 0)
+mesh = SubResource("PlaneMesh_lmksl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(15.964332, 0, 0, 0, 1, 0, 0, 0, 15.958771, 0, 0, 0)
+shape = SubResource("HeightMapShape3D_pybca")

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bui8jdc74uc0j"]
+
+[ext_resource type="PackedScene" uid="uid://ccuueup85vyut" path="res://scenes/ground.tscn" id="1_knulf"]
+[ext_resource type="PackedScene" uid="uid://d16nkcqpg72ta" path="res://scenes/player.tscn" id="2_hww71"]
+[ext_resource type="PackedScene" uid="uid://in8121q3wx5c" path="res://scenes/levels/tree.tscn" id="3_hww71"]
+[ext_resource type="AudioStream" uid="uid://jrvj3rncglka" path="res://audio/levels/dark_trail/ambience.ogg" id="4_fq3ou"]
+[ext_resource type="PackedScene" uid="uid://b1ltxgehm0nyy" path="res://scenes/levels/wall.tscn" id="5_8qaad"]
+
+[node name="testing_scene" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("2_hww71")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3400356, 0.3, 7.269944)
+
+[node name="ground" type="Node" parent="."]
+
+[node name="StaticBody3D" parent="ground" instance=ExtResource("1_knulf")]
+transform = Transform3D(-4.8691072, 0, 0, 0, 1, 0, 0, 0, -4.8691072, 0, 0, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_fq3ou")
+autoplay = true
+parameters/looping = true
+
+[node name="StaticBody3D" parent="." instance=ExtResource("5_8qaad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.6180162, -16)
+
+[node name="StaticBody3D2" parent="." instance=ExtResource("5_8qaad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4758987, 2.6180162, -16)
+
+[node name="StaticBody3D3" parent="." instance=ExtResource("5_8qaad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.048757, 2.6180162, -16)
+
+[node name="StaticBody3D4" parent="." instance=ExtResource("5_8qaad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5728583, 2.6180162, -16)
+
+[node name="tree" parent="." instance=ExtResource("3_hww71")]
+transform = Transform3D(1, 0, 0, 0, 1.4370372, 0, 0, 0, 1, -4.5620556, 12.870646, -4.4084606)
