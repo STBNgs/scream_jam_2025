@@ -15,7 +15,7 @@ var was_falling = false
 const WALK_SPEED = 2.0
 const RUN_SPEED = 7.0
 const ON_WALL_SPEED = 0.1
-const JUMP_VELOCITY = 5.0
+const JUMP_VELOCITY = 5.5
 var speed = WALK_SPEED
 
 
