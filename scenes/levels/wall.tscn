@@ -4,22 +4,23 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_80qgo"]
 albedo_texture = ExtResource("1_lovbj")
-uv1_scale = Vector3(1.07, 1.07, 1.07)
-uv1_offset = Vector3(0.45, -4.77, 0)
+uv1_scale = Vector3(-0.16, -0.16, -0.16)
 uv1_triplanar = true
+uv1_world_triplanar = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_y2fcs"]
 material = SubResource("StandardMaterial3D_80qgo")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_yp4o4"]
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_lovbj"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [node name="wall" type="StaticBody3D"]
 collision_mask = 0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(4.530086, 0, 0, 0, 5.236033, 0, 0, 0, 0.5728192, 0, 0, 0)
+transform = Transform3D(10.179486, 0, 0, 0, 5.2909045, 0, 0, 0, 0.5788221, 0, 0, 0)
 mesh = SubResource("BoxMesh_y2fcs")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(4.530086, 0, 0, 0, 5.236033, 0, 0, 0, 0.099999964, 0, 0, 0)
-shape = SubResource("BoxShape3D_yp4o4")
+transform = Transform3D(10.179486, 0, 0, 0, 5.2909045, 0, 0, 0, 0.5788221, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_lovbj")

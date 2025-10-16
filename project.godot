@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="scream_jam_2025"
-run/main_scene="uid://b8hv2dn1awwuh"
+run/main_scene="uid://bui8jdc74uc0j"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
