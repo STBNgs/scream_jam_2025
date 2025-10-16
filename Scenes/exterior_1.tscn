@@ -1,19 +1,17 @@
-[gd_scene load_steps=13 format=3 uid="uid://blkr4clxs8gpa"]
+[gd_scene load_steps=12 format=3 uid="uid://blkr4clxs8gpa"]
 
 [ext_resource type="ArrayMesh" uid="uid://p2d0prym7166" path="res://ModelosIndustrial/Industrial_exterior_v2_Road_long.res" id="1_n15es"]
 [ext_resource type="ArrayMesh" uid="uid://c30ln5l4ivop3" path="res://ModelosIndustrial/Industrial_exterior_v2_Road_short.res" id="2_b5sfw"]
 [ext_resource type="ArrayMesh" uid="uid://daemjlwianefy" path="res://ModelosIndustrial/Industrial_exterior_v2_Road_turn_1.res" id="3_2bkhb"]
 [ext_resource type="ArrayMesh" uid="uid://1atomhatasjn" path="res://ModelosIndustrial/Industrial_exterior_v2_Road_turn_3.res" id="4_a5obf"]
+[ext_resource type="PackedScene" uid="uid://c0ae6qhequq2j" path="res://Scenes/Player.tscn" id="4_bafbi"]
 [ext_resource type="ArrayMesh" uid="uid://bqyccevks32em" path="res://ModelosIndustrial/Industrial_exterior_v2_Alphalt_Floor.res" id="5_n6ve7"]
 [ext_resource type="ArrayMesh" uid="uid://cossqg61tjih7" path="res://ModelosIndustrial/Industrial_exterior_v2_Box_wood.res" id="6_nk37w"]
 [ext_resource type="ArrayMesh" uid="uid://dnkwxpm1x7a0k" path="res://ModelosIndustrial/Industrial_exterior_v2_Building_2.res" id="7_4w8qm"]
 [ext_resource type="ArrayMesh" uid="uid://b28dffjr16874" path="res://ModelosIndustrial/Industrial_exterior_v2_Bridges_support_1.res" id="9_qwbu7"]
-[ext_resource type="Script" path="res://Scripts/player.gd" id="10_3yg3n"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ndr65"]
 size = Vector3(1.08203, 1.00964, 1.26147)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_fmw67"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8l3sk"]
 size = Vector3(0.918091, 1, 2.01025)
@@ -52,21 +50,7 @@ shape = SubResource("BoxShape3D_ndr65")
 
 [node name="Enemigos" type="Node" parent="."]
 
-[node name="Player" type="Node" parent="."]
-
-[node name="Player" type="CharacterBody3D" parent="Player"]
-script = ExtResource("10_3yg3n")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.733622, 0)
-shape = SubResource("BoxShape3D_fmw67")
-
-[node name="Head" type="Node3D" parent="Player/Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.763998, 0)
-
-[node name="Camera3D" type="Camera3D" parent="Player/Player/Head"]
-transform = Transform3D(-0.0430844, -0.000304893, -0.999071, 0.00286268, 0.999996, -0.000428639, 0.999067, -0.00287849, -0.0430834, 0, 0, 0)
-current = true
+[node name="Player" parent="." instance=ExtResource("4_bafbi")]
 
 [node name="Pista" type="Node" parent="."]
 

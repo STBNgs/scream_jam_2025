@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://bby6yoo6yxova"]
+
+[ext_resource type="Script" uid="uid://dyhpwwig20kr0" path="res://room2.gd" id="1_6qrli"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6qrli"]
+size = Vector3(5.5479736, 0.13330078, 5.9057617)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mrjev"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_limdr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_p7ttq"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24945068, -0.4333496, -0.735214)
+shape = SubResource("BoxShape3D_6qrli")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.9139566, 0, 0, 0, 3.3545294, 0, 0, 0, 2.8606591, 0, 0, 0)
+mesh = SubResource("PlaneMesh_mrjev")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.60902536, -2.3198822)
+script = ExtResource("1_6qrli")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.35410166)
+shape = SubResource("BoxShape3D_limdr")
+
+[node name="Label3D" type="Label3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.63618374)
+text = "ESCENA 3"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.17600548, 0)
+mesh = SubResource("BoxMesh_p7ttq")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area3D" to="Area3D" method="_on_body_exited"]

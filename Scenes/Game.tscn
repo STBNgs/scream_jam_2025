@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=3 uid="uid://dtdd258j2augv"]
+
+[ext_resource type="Script" uid="uid://bj3w01ek12bvt" path="res://Scenes/Game.gd" id="1_gl6un"]
+[ext_resource type="PackedScene" uid="uid://blkr4clxs8gpa" path="res://Scenes/exterior_1.tscn" id="2_b2bpf"]
+[ext_resource type="PackedScene" uid="uid://ccv1cxj0jdrj7" path="res://Scenes/Room1.tscn" id="3_7lihs"]
+[ext_resource type="PackedScene" uid="uid://bby6yoo6yxova" path="res://Scenes/room2.tscn" id="4_fgofq"]
+[ext_resource type="PackedScene" uid="uid://c0ae6qhequq2j" path="res://Scenes/Player.tscn" id="5_b2bpf"]
+[ext_resource type="PackedScene" uid="uid://s3hfbdbay5xb" path="res://Scenes/pause_menu.tscn" id="6_7lihs"]
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_gl6un")
+
+[node name="LevelRoot" type="Node3D" parent="."]
+
+[node name="Exterior1" parent="LevelRoot" instance=ExtResource("2_b2bpf")]
+
+[node name="Room1" parent="LevelRoot" instance=ExtResource("3_7lihs")]
+
+[node name="Room2" parent="LevelRoot" instance=ExtResource("4_fgofq")]
+
+[node name="Player" parent="." instance=ExtResource("5_b2bpf")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("6_7lihs")]
