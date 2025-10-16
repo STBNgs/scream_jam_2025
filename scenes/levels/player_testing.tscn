@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bui8jdc74uc0j"]
+[gd_scene load_steps=12 format=3 uid="uid://bui8jdc74uc0j"]
 
 [ext_resource type="PackedScene" uid="uid://ccuueup85vyut" path="res://scenes/ground.tscn" id="1_knulf"]
 [ext_resource type="PackedScene" uid="uid://d16nkcqpg72ta" path="res://scenes/player.tscn" id="2_hww71"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://in8121q3wx5c" path="res://scenes/levels/tree.tscn" id="3_hww71"]
 [ext_resource type="AudioStream" uid="uid://jrvj3rncglka" path="res://audio/levels/dark_trail/ambience.ogg" id="4_fq3ou"]
 [ext_resource type="PackedScene" uid="uid://b1ltxgehm0nyy" path="res://scenes/levels/wall.tscn" id="5_8qaad"]
+[ext_resource type="PackedScene" uid="uid://cx28yjtfruxvm" path="res://3d models/cat.glb" id="7_ruomi"]
+[ext_resource type="PackedScene" uid="uid://cuo036vaoyvlj" path="res://scenes/trigger_audio.tscn" id="8_0halk"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_st7ed"]
 sky_top_color = Color(0.68668085, 0.33015394, 0.21809325, 1)
@@ -61,10 +63,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.292278, 3.6968842, -37.82
 [node name="wall" type="Node3D" parent="environment"]
 
 [node name="StaticBody3D" parent="environment/wall" instance=ExtResource("5_8qaad")]
-transform = Transform3D(5.9412055, 0, 0, 0, 2.7045927, 0, 0, 0, 1, -14.062674, 2.6180162, -16)
+transform = Transform3D(7.723567, 0, 0, 0, 2.7045927, 0, 0, 0, 1, -14.062674, 2.6180162, -16)
+
+[node name="StaticBody3D4" parent="environment/wall" instance=ExtResource("5_8qaad")]
+transform = Transform3D(7.723567, 0, 0, 0, 2.7045927, 0, 0, 0, 1, -14.062674, 2.6180162, -57)
 
 [node name="StaticBody3D3" parent="environment/wall" instance=ExtResource("5_8qaad")]
-transform = Transform3D(5.9412055, 0, 0, 0, 2.7045927, 0, 0, 0, 1, -14.062674, 2.6180162, -57.02741)
+transform = Transform3D(7.723567, 0, 0, 0, 2.7045927, 0, 0, 0, 1, -14.062674, 2.6180162, 25)
+
+[node name="StaticBody3D5" parent="environment/wall" instance=ExtResource("5_8qaad")]
+transform = Transform3D(7.723567, 0, 0, 0, 2.7045927, 0, 0, 0, 1, -14.062674, 2.6180162, -98.027405)
 
 [node name="StaticBody3D2" parent="environment/wall" instance=ExtResource("5_8qaad")]
 transform = Transform3D(-7.769858e-07, 0, -0.9999998, 0, 2.6986144, 0, 17.775364, 0, -4.371138e-08, -26.533579, 2.6180162, -16)
+
+[node name="cat2" parent="." instance=ExtResource("7_ruomi")]
+transform = Transform3D(0.500393, 0, 0.8657984, 0, 1, 0, -0.8657984, 0, 0.500393, 61.12371, 0.21259397, -37.414272)
+
+[node name="Area3D" parent="." instance=ExtResource("8_0halk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.809765, 0.29791075, -37.54327)
